@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Trading page</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            background: #141625;
+            font-family: Poppins;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            background-color: #30344f;
+            display: flex;
+            margin: 0;
+            font-size: 25px;
+            height: 8.7%;
+            justify-content: space-between;
+            padding: 22px;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 66.7%;
+            height: 82.8%;
+            padding-left: 1.4%;
+            right: 31.9%;
+            bottom: 4.8%;
+            padding-top: 2.1%;
+            border-radius: 25px;
+            font-family: Poppins;
+        }
+
+        .card1 {
+            border-radius: 25px;
+            background-color: #30344f;
+            color: #ffffff;
+            font-family: Poppins;
+            font-family: Poppins;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 31%;
+            background-color: #141625;
+            padding-left: 3.2%;
+            border-radius: 25px;
+        }
+
+        .card2 {
+            border-radius: 25px;
+            background-color: #30344f;
+            color: #ffffff;
+            font-family: Poppins;
+            font-family: Poppins;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .card3 {
+            background-color: #30344f;
+            color: #ffffff;
+            font-family: Poppins;
+            font-family: Poppins;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        #buy {
+            width: 70px;
+            height: 1em;
+        }
+
+        input,
+        select,
+        textarea {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        #b2 {
+            border-color: red;
+            border-radius: 25px;
+            height: 115px;
+            font-weight: 500;
+            font-size: 25px;
+            font-family: Poppins;
+            color: red;
+            background: transparent;
+            width: 100%;
+        }
+
+        #customers {
+            font-family: Poppins;
+            border-collapse: collapse;
+            font-weight: 400;
+        }
+
+        #customers td {
+            border: 0px;
+            line-height: 2.2%;
+        }
+
+        #customers th {
+            text-align: center;
+            color: white;
+        }
+
+        #merger {
+            margin-bottom: 110px;
+            border: 0px;
+        }
+
+        #merger th {
+            text-align: center;
+        }
+
+        #ex {
+            border-radius: 5px;
+            border: none;
+            color: #30344f;
+            font-weight: 600;
+            font-family: Poppins;
+            background-color: #21e6c1;
+            height: 1.7rem;
+        }
+
+        .title1 {
+            width: 9.4%;
+            height: 4.6%;
+            font-family: Poppins;
+            left: 79.5%;
+            top: 16.5%;
+            padding-right: 11.4%;
+            bottom: 79%;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.51;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div></div>
+        <div style="color:#ffffff" class="nb">
+            <a href="/dashboard"> Dashboard </a>
+        </div>
+        <div style="color:#ffffff">
+           <a href="/trading"> Trading </a>
+        </div>
+        <div style="color:#ffffff">
+            <a href ="/rules"> Rules </a>
+        </div>
+        <div style="color:#ffffff">
+            <a href="#"> Leaderboard </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card1">
+                <table id="customers">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <!-- <th>Stocks Available</th> -->
+                        <th>Buy</th>
+                    </tr>
+                    <tr>
+                            <th>Team1</th>
+                            <th>$100</th>
+                            <!-- <th>100</th> -->
+                        <form action="/trading" method="POST">
+                            <th id="buy">
+                                <input type="text" name="teamname" placeholder="Name"></input>
+                                <input type="number" name="stocks" placeholder="stocks"></input>
+
+                            </th>
+                            <th><button id="ex">Execute</button></th>
+                        </form>
+                    </tr>
+                    <tr>
+                        <th>Team2</th>
+                        <th>$100</th>
+                        <!-- <th>100</th> -->
+                    </tr>
+                    <tr>
+                        <th>Team3</th>
+                        <th>$100</th>
+                       <!-- <th>100</th> -->
+
+                    </tr>
+                    <tr>
+                        <th>Team4</th>
+                        <th>$100</th>
+                        <!-- <th>100</th> -->
+
+                    </tr>
+                    <tr>
+                        <th>Team5</th>
+                        <th>$100</th>
+                        <!-- <th>100</th> -->
+
+                    </tr>
+                    <tr>
+                        <th>Team6</th>
+                        <th>$100</th>
+                       <!-- <th>100</th> -->
+
+                    </tr>
+                    <tr>
+                        <th>Team7</th>
+                        <th>$100</th>
+                        <!-- <th>100</th> -->
+
+                    </tr>
+                    <tr>
+                        <th>Team8</th>
+                        <th>$100</th>
+                       <!-- <th>100</th> -->
+
+                    </tr>
+                    <tr>
+                        <th>Team9</th>
+                        <th>$100</th>
+                        <!-- <th>100</th> -->
+
+                    </tr>
+                    <tr>
+                        <th>Team10</th>
+                        <th>$100</th>
+                        <!-- <th>100</th> -->
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card3" style="border-radius: 25px;">
+                <center>
+                    <h5>Merger Request</h5>
+                </center>
+                <table id="merger">
+                    <tr>
+                        <th>Company 1</th>
+                        <th style="color:red;">Clock</th>
+                        <th><button id="ex">Execute</button></th>
+                    </tr>
+                    <tr>
+                        <th>Company 1</th>
+                        <th style="color:red;">Clock</th>
+                        <th><button id="ex">Execute</button></th>
+                    </tr>
+                </table>
+            </div>
+            <div id="card4">
+                <button id="b2">Send Merger Request</button>
+            </div>
+        </div>
+    </div>
+</body>
